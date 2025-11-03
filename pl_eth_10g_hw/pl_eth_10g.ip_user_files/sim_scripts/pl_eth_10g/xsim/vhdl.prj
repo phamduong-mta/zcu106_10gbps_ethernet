@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_axi_dma_0_0/sim/pl_eth_10g_axi_dma_0_0.vhd" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_rst_ps8_0_99M_0/sim/pl_eth_10g_rst_ps8_0_99M_0.vhd" \
+
+# Do not sort compile order
+nosort

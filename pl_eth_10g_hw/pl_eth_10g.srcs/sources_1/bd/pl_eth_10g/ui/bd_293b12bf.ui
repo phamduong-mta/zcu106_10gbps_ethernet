@@ -1,0 +1,116 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.951109",
+   "Default View_TopLeft":"2127,612",
+   "ExpandedHierarchyInLayout":"",
+   "comment_0":"PL ETHERNET 10G",
+   "comment_1":"PL ETHERNET 10G",
+   "comment_2":"PL ETHERNET 10G",
+   "comment_3":"PL ETHERNET 10G",
+   "comment_4":"PL ETHERNET 10G",
+   "comment_5":"PL ETHERNET 10G",
+   "comment_6":"PL ETHERNET 10G",
+   "commentid":"comment_0|comment_1|comment_2|comment_3|comment_4|comment_5|comment_6|",
+   "font_comment_0":"14",
+   "font_comment_1":"14",
+   "font_comment_2":"14",
+   "font_comment_3":"14",
+   "font_comment_4":"14",
+   "font_comment_5":"14",
+   "font_comment_6":"14",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port gt_ref_clk -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
+preplace port gt_rx -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace port gt_tx -pg 1 -lvl 8 -x 3120 -y 890 -defaultsOSRD
+preplace portBus sfp_tx_dis -pg 1 -lvl 8 -x 3120 -y 1360 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 950 -y 220 -defaultsOSRD
+preplace inst dma_rx_rst -pg 1 -lvl 6 -x 2410 -y 300 -defaultsOSRD
+preplace inst dma_tx_rst -pg 1 -lvl 6 -x 2410 -y 400 -defaultsOSRD
+preplace inst rx_data_fifo -pg 1 -lvl 2 -x 520 -y 400 -defaultsOSRD
+preplace inst rx_rst_n -pg 1 -lvl 1 -x 170 -y 450 -defaultsOSRD
+preplace inst sfp_tx_dis -pg 1 -lvl 7 -x 2850 -y 1400 -defaultsOSRD
+preplace inst tx_data_fifo -pg 1 -lvl 6 -x 2410 -y 180 -defaultsOSRD
+preplace inst tx_rst_n -pg 1 -lvl 3 -x 950 -y 390 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -x 2410 -y 1250 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 6 -x 2410 -y 920 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 6 -x 2410 -y 1020 -defaultsOSRD
+preplace inst xxv_ethernet_0 -pg 1 -lvl 7 -x 2850 -y 1070 -defaultsOSRD
+preplace inst axi_pl_ps -pg 1 -lvl 4 -x 1410 -y 180 -defaultsOSRD
+preplace inst ps_axi_periph -pg 1 -lvl 6 -x 2410 -y 670 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 2 -x 520 -y 620 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 6 -x 2410 -y 1120 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1410 -y 580 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 5 -x 1890 -y 590 -defaultsOSRD
+preplace netloc Net 1 1 7 330 500 710 470 1190 460 NJ 460 NJ 460 2630 780 3050
+preplace netloc Net1 1 1 6 340 520 720 450 1260 510 1570 700 2230 1180 2650
+preplace netloc Net2 1 6 1 2580 1020n
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1140 270n
+preplace netloc axi_dma_0_mm2s_prmry_reset_out_n 1 3 3 1180J 400 NJ 400 NJ
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1130 290n
+preplace netloc axi_dma_0_s2mm_prmry_reset_out_n 1 3 3 1170J 390 NJ 390 2230J
+preplace netloc dma_rx_rst_Res 1 6 1 2620 300n
+preplace netloc dma_tx_rst_Res 1 6 1 2600 400n
+preplace netloc tx_rst_n_Res 1 1 3 320 490 NJ 490 1230
+preplace netloc util_vector_logic_0_Res 1 3 3 1160 370 NJ 370 2210J
+preplace netloc xlconstant_0_dout 1 6 1 2580J 1250n
+preplace netloc xlconstant_1_dout 1 6 1 2610 920n
+preplace netloc xlconstant_2_dout 1 7 1 3100J 1360n
+preplace netloc xxv_ethernet_0_tx_clk_out_0 1 2 6 770 460 1150 380 NJ 380 2240 470 NJ 470 3090
+preplace netloc xxv_ethernet_0_user_rx_reset_0 1 0 8 20 510 NJ 510 730J 500 1240J 490 NJ 490 NJ 490 NJ 490 3060
+preplace netloc xxv_ethernet_0_user_tx_reset_0 1 2 6 760 510 1250J 500 NJ 500 NJ 500 NJ 500 3070
+preplace netloc zups_Res 1 6 1 2610 1100n
+preplace netloc zups_peripheral_aresetn 1 2 5 740 650 1210 720 NJ 720 2240 1190 2580J
+preplace netloc zups_peripheral_reset 1 2 5 700J 830 NJ 830 NJ 830 NJ 830 2590
+preplace netloc rst_ps8_0_99M_interconnect_aresetn 1 2 4 NJ 640 1200 710 NJ 710 2220J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 5 330 720 720J 680 NJ 680 NJ 680 2200
+preplace netloc xlconcat_0_dout 1 4 1 1560 580n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1160 100n
+preplace netloc xxv_ethernet_0_gt_tx 1 7 1 3100J 890n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1150 80n
+preplace netloc axi_dma_0_M_AXI_SG 1 3 1 1130 60n
+preplace netloc gt_rx_1 1 0 7 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ
+preplace netloc zups_M00_AXI 1 2 5 750 690 NJ 690 NJ 690 2210J 510 2580
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 3 1220J 360 NJ 360 2200
+preplace netloc zups_M01_AXI 1 6 1 2640 670n
+preplace netloc axis_data_fifo_1_M_AXIS 1 2 1 700 180n
+preplace netloc axis_data_fifo_0_M_AXIS 1 6 1 2650 160n
+preplace netloc gt_ref_clk_1 1 0 7 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc xxv_ethernet_0_axis_rx_0 1 1 7 340 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 3080
+preplace netloc axi_pl_ps_M00_AXI 1 4 1 1580 180n
+preplace netloc S00_AXI_1 1 5 1 2200 560n
+preplace cgraphic comment_3 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_2 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_1 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_6 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_5 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_4 place top 0 0 textcolor 4 linecolor 3
+levelinfo -pg 1 0 170 520 950 1410 1890 2410 2850 3120
+pagesize -pg 1 -db -bbox -sgen -120 0 3280 1460
+",
+   "linktoobj_comment_0":"",
+   "linktoobj_comment_1":"",
+   "linktoobj_comment_2":"",
+   "linktoobj_comment_3":"",
+   "linktoobj_comment_4":"",
+   "linktoobj_comment_5":"",
+   "linktoobj_comment_6":"",
+   "linktotype_comment_0":"bd_design",
+   "linktotype_comment_1":"bd_design",
+   "linktotype_comment_2":"bd_design",
+   "linktotype_comment_3":"bd_design",
+   "linktotype_comment_4":"bd_design",
+   "linktotype_comment_5":"bd_design",
+   "linktotype_comment_6":"bd_design"
+}
+0
+{
+   "/comment_0":"comment_0",
+   "/comment_1":"comment_1",
+   "/comment_2":"comment_2",
+   "/comment_3":"comment_3",
+   "/comment_4":"comment_4",
+   "/comment_5":"comment_5",
+   "/comment_6":"comment_6"
+}

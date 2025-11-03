@@ -1,0 +1,63 @@
+#!/bin/sh
+
+echo "Hello PetaLinux World This is an example startup script, ver 4"
+
+reset_counters() {
+  # Read the file into an associative array
+  declare -A counters
+  while read line; do
+    # Split the line into key and value
+    key=$(echo "$line" | cut -d= -f1)
+    value=$(echo "$line" | cut -d= -f2)
+    # Store the key-value pair in the array
+    counters["$key"]=$value
+  done < counter_env
+
+  # Reset the values in the array
+  counters["nu_nw_upgrade_counter"]=0
+  counters["nu_nw_global_counter"]=0
+  counters["nu_lc_boot_counter"]=0
+  counters["nu_lc_backup_counter"]=0
+
+  # Write the array back to the file
+  for key in "${!counters[@]}"; do
+    echo "$key=${counters[$key]}" >> counter_env.tmp
+  done
+
+  # Replace the original file with the updated file
+  mv counter_env.tmp counter_env
+}
+
+# get the user boot mode pins
+boot_mode_reg=`peek 0x00FF5E0204`
+boot_from_sd_card_reg_val="0x00000555"
+boot_from_emmc_reg_val="0x00000666"
+
+if [ "$boot_mode_reg" = "$boot_from_sd_card_reg_val" ]; then
+#
+# SD BOOT
+#
+echo "booting from sd card based on user boot mode"
+cd /mnt/sd-mmcblk1p1
+  echo "Starting Crashkernel Service"
+  kexec -p /mnt/sd-mmcblk1p1/crashkernel/vmlinux --initrd=/mnt/sd-mmcblk1p1/crashkernel/rootfs.cpio
+  echo "Resetting U-Boot Counters"
+  reset_counters
+./startup_script.cmd
+elif [ "$boot_mode_reg" = "$boot_from_emmc_reg_val" ]; then
+#
+# EMMC BOOT
+#
+echo "booting from emmc based on boot mode"
+cd /mnt/sd-mmcblk0p1
+  echo "Starting Crashkernel Service"
+  kexec -p /mnt/sd-mmcblk0p1/crashkernel/vmlinux --initrd=/mnt/sd-mmcblk0p1/crashkernel/rootfs.cpio
+  echo "Resetting U-Boot Counters"
+  reset_counters
+./startup_script.cmd
+else
+#
+# Should never be here
+#
+echo "[ERROR] user boot mode unsupported, waiting for system reset..."
+fi

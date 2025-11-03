@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "FPGA Lover"
+cd /mnt/sd-mmcblk0p1
+

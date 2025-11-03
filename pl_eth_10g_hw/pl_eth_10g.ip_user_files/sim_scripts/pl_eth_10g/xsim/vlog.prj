@@ -1,0 +1,48 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../pl_eth_10g.gen/sources_1/bd/pl_eth_10g/ipshared/434f/hdl" --include "../../../../pl_eth_10g.gen/sources_1/bd/pl_eth_10g/ipshared/ec67/hdl" --include "../../../../pl_eth_10g.gen/sources_1/bd/pl_eth_10g/ipshared/2fcd/hdl" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_dma_rx_rst_0/sim/pl_eth_10g_dma_rx_rst_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_dma_tx_rst_0/sim/pl_eth_10g_dma_tx_rst_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_rx_data_fifo_0/sim/pl_eth_10g_rx_data_fifo_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_rx_rst_n_0/sim/pl_eth_10g_rx_rst_n_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_sfp_tx_dis_0/sim/pl_eth_10g_sfp_tx_dis_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_tx_data_fifo_0/sim/pl_eth_10g_tx_data_fifo_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_tx_rst_n_0/sim/pl_eth_10g_tx_rst_n_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xlconstant_0_0/sim/pl_eth_10g_xlconstant_0_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xlconstant_1_0/sim/pl_eth_10g_xlconstant_1_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xlconstant_2_0/sim/pl_eth_10g_xlconstant_2_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe4_channel.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/ip_0/sim/pl_eth_10g_xxv_ethernet_0_0_gt_gthe4_channel_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/ip_0/sim/pl_eth_10g_xxv_ethernet_0_0_gt_gtwizard_gthe4.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/ip_0/sim/pl_eth_10g_xxv_ethernet_0_0_gt_gtwizard_top.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/ip_0/sim/pl_eth_10g_xxv_ethernet_0_0_gt.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_top.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_axi4_lite_if_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/pl_eth_10g_xxv_ethernet_0_0/gtwizard_ultrascale_v1_7_gthe4_common.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/pl_eth_10g_xxv_ethernet_0_0/pl_eth_10g_xxv_ethernet_0_0_gt_gthe4_common_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_common_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_ultrascale_rx_userclk.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/xxv_ethernet_v4_1_7/pl_eth_10g_xxv_ethernet_0_0_ultrascale_tx_userclk.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xxv_ethernet_0_0/pl_eth_10g_xxv_ethernet_0_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_util_vector_logic_0_0/sim/pl_eth_10g_util_vector_logic_0_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xlconcat_0_0/sim/pl_eth_10g_xlconcat_0_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_zynq_ultra_ps_e_0_0/sim/pl_eth_10g_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xbar_2/sim/pl_eth_10g_xbar_2.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_xbar_3/sim/pl_eth_10g_xbar_3.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_us_0/sim/pl_eth_10g_auto_us_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_us_1/sim/pl_eth_10g_auto_us_1.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_cc_0/sim/pl_eth_10g_auto_cc_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_us_2/sim/pl_eth_10g_auto_us_2.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_cc_1/sim/pl_eth_10g_auto_cc_1.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_s00_mmu_0/sim/pl_eth_10g_s00_mmu_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_s01_mmu_0/sim/pl_eth_10g_s01_mmu_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_s02_mmu_0/sim/pl_eth_10g_s02_mmu_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_ds_0/sim/pl_eth_10g_auto_ds_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_pc_0/sim/pl_eth_10g_auto_pc_0.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_ds_1/sim/pl_eth_10g_auto_ds_1.v" \
+"../../../bd/pl_eth_10g/ip/pl_eth_10g_auto_pc_1/sim/pl_eth_10g_auto_pc_1.v" \
+"../../../bd/pl_eth_10g/sim/pl_eth_10g.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
